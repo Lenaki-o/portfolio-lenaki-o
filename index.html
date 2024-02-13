@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenaki-o</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <style>
-        
- * {
+        * {
     margin:0;
     border:0;
     padding:0;
@@ -29,7 +29,7 @@ body{
     background-color: var(--color-neutral);
 }
 
-.green {
+.green{
     width: 100%;
     padding: 20px;
     height: 500px;
@@ -43,6 +43,7 @@ body{
     justify-content:center;
     color:white;
     font-size: 29px; 
+    
 }
 .decorate {
     text-transform: capitalize;
@@ -66,6 +67,7 @@ body{
     text-align: justify;
     margin: 20px;
     flex-wrap: wrap;
+    
 }
 .about>p{
     margin: 5px;
@@ -95,6 +97,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    
 }
 ul {
     list-style: none;
@@ -185,6 +188,45 @@ h1:hover {
     h1:hover {
         font-size: 3.3rem;
     }
+    .ux-cont, .insta-cont, .flex-cont, .grid-cont {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .flex1 {
+        height:auto;
+        width: 100%
+
+    }
+    }
+    @media (max-width:1000px){
+        .flex2{
+        display: none;
+    }
+    }
+    
+    .web {
+        width:92%;
+    }
+    
+    .ux-cont, .insta-cont, .flex-cont, .grid-cont {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ux, .insta, .grid {
+        min-width: 200px;
+        max-width: 300px;
+    }
+    .flex1 {
+        width: 230px;
+        
+    }
+    .flex2 {
+        width: 920px;
     }
        
         .fa {
@@ -227,8 +269,7 @@ h1:hover {
         </div>
         <div class="me">
         <h2>Who am I?</h2>
-        <img class="me" src="./images/me.jpg" alt="my portrait"/>
-        </div>
+        <img class="me" src="./images/me.jpg" alt="my portrait"/></div>
         <div class="about">
             <p> If only I knew! The only thingk I feel certain about is that after I discovered coding I want this to become part of who I am. I am still on that journey.</p>
             <p> After several years of office position and administration I left that path and started studying UX deisgn ideas, social media marketing and later on coding and web development.</p>
@@ -249,11 +290,26 @@ h1:hover {
         </div>
         <h2>Projects</h2>
             <div class="item projects">
-                <div class="ux"><h3><a href="./code/ux.html">UX projects</h3></a> </div>
-                <div class="insta"><h3><a href="./code/social.html"> Social Media projects</a></h3></div>
-                <div class="web"><h3><a href="./code/web.html">Web project</a></h3></div>
-                <div class="flex"><h3><a href="./code/flex.html">Flexbox projects</a> </h3></div>
-                <div class="grid"><h3><a href="./code/grid.html">Grid layout projects</a> </h3></div>
+                <h3>UX projects</h3>
+                <div class="ux-cont">
+                    <img class="ux" src="./images/ux/beerapp1.png"><img class="ux" src="./images/ux/beerapp2.png"><img src="./images/ux/pocketcity.png" class="ux">
+                </div>
+                <h3>Social Media projects</h3>
+                <div class="insta-cont">
+                    <img class="insta" src="./images/insta/i1.jpg"><img class="insta" src="./images/insta/i2.jpg"> <img src="./images/insta/i3.jpg" class="insta">
+                </div>
+                <h3>Web project</h3>
+                <div class="web-cont">
+                    <img class="web" src="./images/dalas.png" alt="dalas vilas one page website">
+                    </div>
+                    <h3>Flexbox projects</h3>
+                <div class="flex-cont">
+                    <img class="flex1" src="./images/flex/f-col.png"><img class="flex2" src="./images/flex/f-row.png">
+                </div>
+                <h3>Grid layout projects</h3>
+                <div class="grid-cont">
+                    <img class="grid" src="./images/modrian/m1.png"><img class="grid" src="./images/modrian/m2.png"><img class="grid" src="./images/modrian/modrian-shot.png">
+                </div>
             </div>
             
         </div>
