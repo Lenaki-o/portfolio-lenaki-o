@@ -34,7 +34,7 @@ body{
     overflow-x: hidden;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--color-font)
 }
@@ -46,9 +46,30 @@ span.decorate {
     text-transform: capitalize;
     text-decoration:underline;
 }
+h1,h2,h3 {
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+}
+h1 {
+    transition: all 0.5s ease-in-out;
+}
+h3 {
+    margin: 20px 0;
+}
+h1:hover {
+    letter-spacing: 8px;
+}
+h2:hover {
+    color: var(--color-accent);
+}
+h3:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
 /* end of general rules*/
 
-/*header*/
+/*header rules*/
 .green{
     width: 100%;
     padding: 10%;
@@ -161,34 +182,9 @@ ul>li {
     margin:5px;
 }
 
-h1,h2,h3 {
-    text-align: center;
-    margin: 20px;
-    padding: 5px;
-}
-h1 {
-    transition: all 0.5s ease-in-out;
-}
-h3 {
-    margin: 20px 0;
-}
-h1:hover {
-    letter-spacing: 8px;
-}
-h2:hover {
-    color: var(--color-accent);
-}
-h3:hover {
-    background-color: var(--color-accent);
-    color: white;
-}
 .pink h3:hover {
     opacity: 0.5;
 }
-
-
-/*check this*/
-
 
 .projects > div {
     
@@ -215,9 +211,7 @@ h3:hover {
     align-items: center;
     max-width:100%;
     flex-wrap: nowrap;
-
 }
-
 
 /*end o main*/
 
