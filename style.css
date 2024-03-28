@@ -1,0 +1,277 @@
+/*general rules*/
+:root {
+    --color-green: #A3C9AA;
+    --color-greenL: #a3c9aa28;
+    --color-pink: #C68484;
+    --color-pinkL:rgba(198, 132, 132, 0.185);
+    --color-neutral: #eee;
+    --color-font: #504b4b;
+    --color-accent: #9B4444;
+}
+* {
+    margin:0;
+    border:0;
+    padding:0;
+    font-family: Cochin, Cambria;
+    box-sizing: border-box;
+}
+*:hover {
+    cursor: default;
+}
+
+
+.hidden {
+    display: none;
+}
+.show {
+    width:100%;
+}
+
+body{
+    font-size: 1.2em;
+    color: var(--color-font);
+    background-color: var(--color-neutral);
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-font)
+}
+a:hover {
+    cursor: pointer;
+}
+
+span.decorate {
+    text-transform: capitalize;
+    text-decoration:underline;
+}
+/* end of general rules*/
+
+/*header*/
+.green{
+    width: 100%;
+    padding: 10%;
+    height: 50vh;
+    background: linear-gradient(
+        var(--color-pink) 10%,
+        var(--color-green)
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    color:white;
+    font-size: 1.7rem; 
+}
+/* inside contact-tags*/
+
+.fa {
+    display: inline;
+    padding: 10px 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 2px;
+    border-radius: 20%;
+    }
+.fa:hover {
+    opacity: 0.7;}
+.fa-linkedin, .fa-instagram {
+      background: #9B4444;
+      color: white;
+    }
+
+
+.pink {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-accent);
+    padding: 20px; 
+    letter-spacing: 0.79em;
+    color: white;
+    margin-bottom: 30px;
+}
+.me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img.me {
+    width: 150px;
+    border: 5px solid var(--color-accent);
+    border-radius: 50%;
+    transition: all 0.6s;
+}
+img.me:hover {
+    transform: rotate(180deg)
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    margin: 20px;
+    flex-wrap: wrap; 
+}
+.about > p {
+    margin: 10px;
+    padding: 20px 10px;
+    background-color: var(--color-greenL);
+    border-radius: 7px;
+    max-width: 800px;
+    min-width: 150px;
+}
+.about > p:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
+/*end of header*/
+
+/* main rules*/
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--color-neutral);
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--color-font);
+    margin-bottom: 50px;
+    gap: 1px;
+}
+ul>li {
+    background-color: var(--color-pinkL);
+    width: auto;
+    min-width: 150px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:5px;
+}
+
+h1,h2,h3 {
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+}
+h3 {
+    margin: 20px 0;
+}
+h1:hover {
+    letter-spacing: 8px;
+    
+}
+h2:hover {
+    color: var(--color-accent);
+}
+h3:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
+.pink h3:hover {
+    opacity: 0.5;
+}
+
+
+/*check this*/
+
+
+.projects > div {
+    
+    margin: 50px auto;
+    background-color: var(--color-greenL);
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+    
+}
+.projects >*:hover {
+    background-color: var(--color-accent);
+}
+
+.insta img, .ux  img{
+    max-width: calc(100vh/3);
+}
+.flex.cont, .grid.cont{
+    flex-direction: column;
+    align-items: center;
+    max-width:100%;
+    flex-wrap: nowrap;
+
+}
+
+
+/*end o main*/
+
+/*ok*/
+/*footer*/
+footer{
+    background: linear-gradient(
+        var(--color-pink) 10%,
+        var(--color-green)
+    );
+        padding:5vh;
+        font-size: 1.5rem;
+        display: flex;
+        bottom: 0;
+        flex-direction: column;
+}
+footer>a:hover{
+    color: var(--color-accent);
+    font-weight: 900;
+}
+/*end of footer*/
+
+/*@media queries for 600px*/
+@media (max-width:600px) {
+    .skills>* {
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .cont {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hidden {
+        display: flex;
+
+    }
+    .show{
+        display: none;
+    }
+    .projects > div {
+        flex-direction: column;
+    }
+    
+    .insta img, .ux  img{
+        max-width: 100%;
+    }
+}
+  
+
+
+
+
+       
