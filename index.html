@@ -3,291 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenaki-o</title>
+    <title>Front-end Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <style>
-        * {
-    margin:0;
-    border:0;
-    padding:0;
-    font-family: Cochin, Cambria;
-}
-        *:hover {
-            cursor: default;
-        }
-        a:hover {
-            cursor: pointer;
-        }
-:root {
-    --color-green: #A3C9AA;
-    --color-greenL: #a3c9aa28;
-    --color-pink: #C68484;
-    --color-pinkL:rgba(198, 132, 132, 0.185);
-    --color-neutral: #eee;
-    --color-font: #504b4b;
-    --color-accent: #9B4444;
-}
-body{
-    
-    font-size: 1.2em;
-    color: var(--color-font);
-    background-color: var(--color-neutral);
-}
-
-.green{
-    width: 100%;
-    padding: 20px;
-    height: 500px;
-    background: linear-gradient(
-        var(--color-pink) 10%,
-        var(--color-green)
-    );
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    color:white;
-    font-size: 29px; 
-    
-}
-.decorate {
-    text-transform: capitalize;
-    text-decoration:underline;
-}
-.pink {
-    width: 100%;
-    background-color: var(--color-accent);
-    padding: 10px; margin:0;
-    letter-spacing: 0.79em;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    margin-bottom: 30px;
-}
-.about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    text-align: justify;
-    margin: 20px;
-    flex-wrap: wrap;
-    
-}
-.about>p{
-    margin: 5px;
-    padding: 20px 5px;
-    box-sizing: border-box;
-    background-color: var(--color-greenL);
-    border-radius: 10%;
-    max-width: 800px;
-    min-width: 100px;
-}
-.container {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    background-color: var(--color-neutral);
-    padding: 20px;
-}
-
-
-.projects> *{
-    
-    margin: 20px 5px;
-    background-color: var(--color-greenL);
-    width: auto;
-    min-width: 200px;
-    min-height: 50px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: var(--color-font);
-    margin-bottom: 50px;
-}
-ul>li {
-    margin: 5px;
-    background-color: var(--color-pinkL);
-    
-    width: auto;
-    min-width: 200px;
-    min-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-h1,h2,h3 {
-    text-align: center;
-    margin: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: var(--color-font)
-}
-.me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-img.me {
-    width: 150px;
-    border: 5px solid var(--color-accent);
-    border-radius: 50%;
-    transition: all 0.6s;
-}
-footer{
-    background: linear-gradient(
-        var(--color-pink) 10%,
-        var(--color-green)
-    );
-        padding-left: 10px;
-        display: flex;
-        bottom: 0;
-        height: 60px;
-        margin-bottom: 0;
-        flex-direction: row;
-}
-
-footer>a:hover{
-    color: var(--color-accent);
-    font-weight: 900;
-    font-size: 1.1em;
-}
-
-.projects> *:hover {
-    background-color: var(--color-green);
-}
-
-h2:hover {
-    color: var(--color-accent);
-}
-img.me:hover {
-    transform: rotate(180deg)
-}
-.pink h3:hover {
-    opacity: 0.5;
-}
-h3:hover {
-    background-color: var(--color-accent);
-    color: white;
-}
-.about p:hover {
-    background-color: var(--color-accent);
-    color: white;
-}
-h1:hover {
-    transform: translate(0px,-20px);
-    font-size: 4.5rem;
-}
-@media (max-width:450px){
-    .skills>ul{
-        display: block;
-    }
-    h1{
-        font-size:   3rem;
-    }
-    h1:hover {
-        font-size: 3.3rem;
-    }
-    .ux-cont, .insta-cont, .flex-cont, .grid-cont {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .flex1 {
-        height:auto;
-        width: 100%
-
-    }
-    }
-    @media (max-width:1000px){
-        .flex2{
-        display: none;
-    }
-    }
-    
-    .web {
-        width:92%;
-    }
-    
-    .ux-cont, .insta-cont, .flex-cont, .grid-cont {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .ux, .insta, .grid {
-        min-width: 200px;
-        max-width: 300px;
-    }
-    .flex1 {
-        width: 230px;
-        
-    }
-    .flex2 {
-        width: 920px;
-    }
-       
-        .fa {
-        padding: 10px;
-        font-size: 30px;
-        width: 30px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        border-radius: 20%;
-        
-        }
-        .fa:hover {
-        opacity: 0.7;}
-
-        .fa-linkedin {
-          background: #9B4444;
-          color: white;
-        }
-
-        .fa-instagram {
-          background: #9B4444;
-          color: white;
-        }
-        </style>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="portofolio page in HTML5 CSS3">
+    <meta name="keywords" content="CSS, HTML5, Flexbox, Grid layout, Responsive design Front end">
+    <meta name="author" content="Lenaki-o">
+   
 </head>
 <body>
+
     <header>
+
         <div class="header name">
-            <div class="green"><h1> Hello World!</h1>
-            <h2> I am Lena </h2>
-            <section class="contact">
-                <a href="https://www.linkedin.com/in/elenmakropoulou/" alt="linkedin icon" target="_blank" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/lenaki_oh/" target="_blank" alt="instagram icon" class="fa fa-instagram"></a>         
-            </section>
-        </div>
+            <div class="green">
+                <h1> Hello World!</h1>
+                <h2> I am Lena </h2>
+                    <div class="contact-tags">
+                    <a href="https://www.linkedin.com/in/elenmakropoulou/" alt="linkedin icon" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/lenaki_oh/" target="_blank" alt="instagram icon" class="fa fa-instagram"></a>         
+                    </div>
+            </div>
         
-            <div class="pink"><h3> a <span class="decorate">web</span> developer in the process</h3></div>
-    
+            <div class="pink">
+                <h3> a <span class="decorate">web</span> developer in the process</h3>
+            </div>
+
         </div>
+
         <div class="me">
-        <h2>Who am I?</h2>
-        <img class="me" src="./images/me.jpg" alt="my portrait"/></div>
-        <div class="about">
-            <p> If only I knew! The only thing I feel certain about is that after I discovered coding, I want this to become part of who I am. I am still on that journey.</p>
-            <p> After several years of office position and administration I left that path and started studying UX design ideas, social media marketing and later on coding and web development.</p>
+            <h2>Who am I?</h2>
+            <img class="me" src="./images/me.jpg" alt="my portrait"/>
         </div>
+        <div class="about">
+            <p id="p1"> If only I knew! The only thing I feel certain about is that after I discovered coding, I want this to become part of who I am. I am still on that journey.</p>
+            <p id="p2"> After several years of office position and administration I left that path and started studying UX design ideas, social media marketing and later on coding and web development.</p>
+        </div>
+
     </header>
+
     <main>
         <div class="container">
-            <div class=" item skills"><h2>Skills</h2><hr/>
+
+            <div class=" item skills">
+                <h2>Skills</h2>
                 <ul>
                 <li>Html & Css</li>
                 <li>Figma & Canva</li>
@@ -295,38 +54,48 @@ h1:hover {
                 <li>C & Python basic</li>
                 <li>UX design certificate</li>
                 <li>Project management certificate</li>
+                </ul>
+            </div>
 
-            </ul>
-        </div>
-        <h2>Projects</h2>
+            <h2>Projects</h2>
             <div class="item projects">
+
                 <h3>UX projects</h3>
-                <div class="ux-cont">
-                    <img class="ux" src="./images/ux/beerapp1.png"><img class="ux" src="./images/ux/beerapp2.png"><img src="./images/ux/pocketcity.png" class="ux">
+                <div class="ux cont">
+                    <img class="ux" src="./images/ux/beerapp1.png" alt="mockups for an app design as a ux project"><img class="ux" src="./images/ux/beerapp2.png" alt="mockups for an app design as a ux project"><img src="./images/ux/pocketcity.png" alt="mockups for an app design as a ux project" class="ux">
                 </div>
+
                 <h3>Social Media projects</h3>
-                <div class="insta-cont">
-                    <img class="insta" src="./images/insta/i1.jpg"><img class="insta" src="./images/insta/i2.jpg"> <img src="./images/insta/i3.jpg" class="insta">
+                <div class="insta cont">
+                    <img class="insta" src="./images/insta/i1.jpg"  alt="instagram posts for a coffee shop in blue color"><img class="insta" src="./images/insta/i2.jpg" alt="instagram posts for a coffee shop in blue color"> <img src="./images/insta/i3.jpg" class="insta" alt="instagram posts for a coffee shop in blue color">
                 </div>
-                <h3>Web project</h3>
-                <div class="web-cont">
-                    <img class="web" src="./images/dalas.png" alt="dalas vilas one page website">
+
+                <h3>Bootstrap</h3>
+                <div class="web cont">
+                    <img class="show" src="./images/bootstrap/tindog.png" alt="webpage project made with bootstrap for an app that is called Tindog showing a small dog's profile picture">
+                    <img class="hidden" src="./images/bootstrap/tindog-sm.png" alt="the same Tindoj webpage for small devices">
                     </div>
-                    <h3>Flexbox projects</h3>
-                <div class="flex-cont">
-                    <img class="flex1" src="./images/flex/f-col.png"><img class="flex2" src="./images/flex/f-row.png">
+
+                <h3>Flexbox projects</h3>
+                <div class="flex cont">
+                    <img class="show" src="./images/flex/origamania.png" alt="screenshot of a weppage for origami">
+                    <img class="show" src="./images/flex/mugme.png" alt="screenshot of a webpage for a coffeeshop">
+                    <img class="hidden" src="./images/flex/mugme-sm.png" alt="screenshot of a webpage for a coffeeshop in small devices">
+                    <img class="hidden" src="./images/flex/origami-sm.png" alt="screenshot of a weppage for origami in small devices">
                 </div>
+
                 <h3>Grid layout projects</h3>
-                <div class="grid-cont">
-                    <img class="grid" src="./images/modrian/m1.png"><img class="grid" src="./images/modrian/m2.png"><img class="grid" src="./images/modrian/modrian-shot.png">
+                <div class="grid cont">
+                    <img class="show" src="./images/modrian/modrian-large.png" alt="a large painting of modrian in html5">
+                    <img class="hidden" src="./images/modrian/m1.png" alt="a modrian painting made in html5" width="90%"><img class="hidden" src="./images/modrian/m2.png" alt="a modrian painting made in html5" width="90%"><img class="hidden" src="./images/modrian/modrian-shot.png" width="90%" alt="a modrian painting made in html5">
                 </div>
             </div>
             
         </div>
-        
     </main>
+
     <footer>
-        <i>git-hub</i>/<a class="git" href="https://github.com/Lenaki-o" target="_blank">Lenaki-o</a> 
+        <a class="git" href="https://github.com/Lenaki-o" target="_blank"><i>git-hub &gt;</i>Lenaki-o</a> 
     </footer>
     
 </body>
