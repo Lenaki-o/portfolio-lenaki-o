@@ -73,10 +73,10 @@ h3:hover {
 /*header rules*/
 .green{
     width: 100%;
-    padding: 10%;
-    height: 50vh;
+    padding: 15%;
+    height: 55vh;
     background: linear-gradient(
-        var(--color-pink) 10%,
+        var(--color-accent) 20%,
         var(--color-green)
     );
     display: flex;
